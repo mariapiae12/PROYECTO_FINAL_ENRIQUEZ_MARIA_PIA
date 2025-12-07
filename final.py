@@ -4,11 +4,11 @@
 
 
 # Importamos todas las librerías necesarias
-import streamlit as st # para crear la pagina web
-import pandas as pd # para manejar el database de excel
-import random # para el programa que elegirá películas al azar
-import folium # para crear mapas interactivos
-from streamlit.components.v1 import html # para insertar el mapa en el streamlit
+import streamlit as st 
+import pandas as pd 
+import random 
+import folium 
+from streamlit.components.v1 import html 
 
 # definimos las páginas de la barra lateral
 paginas = ['Presentación', 'Recomendación', 'Juego: Ahorcado', 'Mensajito']
@@ -327,4 +327,5 @@ else:
     col4.image("navidad.JPG", use_container_width=True)
     
     # muchas gracias por todo, fue muy divertido<3
+
 
