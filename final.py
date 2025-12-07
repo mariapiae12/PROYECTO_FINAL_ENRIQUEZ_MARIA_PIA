@@ -2,12 +2,16 @@
 # python -m .venv
 # python -m streamlit run final.py 
 
-
 # Importamos todas las librerías necesarias
+# para crear la pagina web
 import streamlit as st
+# para manejar el database de excel
 import pandas as pd
+# para el programa que elegirá películas al azar
 import random
+# para crear mapas interactivos
 import folium
+# para insertar el mapa en el streamlit
 from streamlit.components.v1 import html
 
 # definimos las páginas de la barra lateral
@@ -299,8 +303,10 @@ elif pagina_seleccionada == 'Juego: Ahorcado':
     
     # botón para volver a jugar
     if st.button("Jugar otra vez"):
-        st.session_state.clear() # borramos todas las variables
-        st.rerun() # recargamos a cero
+        # borramos todas las variables
+        st.session_state.clear()
+        # recargamos a cero
+        st.rerun()
 
 # PAGINA DE MENSAJE FINAL
 else:
@@ -327,6 +333,4 @@ else:
     col4.image("navidad.JPG", use_container_width=True)
     
     # muchas gracias por todo, fue muy divertido<3
-
-
 
